@@ -27,16 +27,34 @@ public class Ejercicio1 {
 
     public void operaciones(int[] arregloNumeros) {
 
-        int suma = 0;
-        float promedio = 0;
+        int sumaArreglo = 0;
+        int numeroMayor;
+        int numeroMenor;
+        float promedioArreglo = 0;
+
+        numeroMayor = arregloNumeros[0];
+        numeroMenor = arregloNumeros[0];
+
         for (int i = 0; i < arregloNumeros.length; i++) {
-            suma += arregloNumeros[i];
+            sumaArreglo += arregloNumeros[i];
         }
-        promedio = suma/arregloNumeros.length;
-        
-        System.out.println("La suma es: "+suma);
-        System.out.println("El promedio es: "+promedio);
+        promedioArreglo = sumaArreglo / arregloNumeros.length;
 
+        for (int i = 0; i < arregloNumeros.length; i++) {
+            if (arregloNumeros[i] > numeroMayor) {
+                numeroMayor = arregloNumeros[i];
+            }
+        }
+
+        for (int i = 0; i < arregloNumeros.length; i++) {
+            if (arregloNumeros[i] < numeroMenor) {
+                numeroMenor = arregloNumeros[i];
+            }
+        }
+
+        System.out.println("La suma es: " + sumaArreglo);
+        System.out.println("El promedio es: " + promedioArreglo);
+        System.out.println("El mayor es: " + numeroMayor);
+        System.out.println("El menor es: " + numeroMenor);
     }
-
 }

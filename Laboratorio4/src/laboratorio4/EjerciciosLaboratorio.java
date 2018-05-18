@@ -20,11 +20,11 @@ public class EjerciciosLaboratorio {
             if (arregloNumeral[i] == numeroABuscar) {
                 resultado = arregloNumeral[i];
             }
-            
+
         }
 
         System.out.println("El número " + numeroABuscar + " se encuentra en la posición " + resultado);
-        
+
         return resultado;
     }
 }
