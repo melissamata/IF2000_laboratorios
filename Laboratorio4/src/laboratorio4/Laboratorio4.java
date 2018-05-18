@@ -23,7 +23,9 @@ public class Laboratorio4 {
         EjerciciosLaboratorio ej = new EjerciciosLaboratorio();
         /*int [] segundoArregloNumeros = {1,3,4,6};
         ej.busquedaLineal(segundoArregloNumeros, 9);*/
-        ej.paredesAPintar();
+        int [] arregloParedes = ej.paredesAPintar();
+        ej.ordenaMenorMayor(arregloParedes);
+        
         
         
     }

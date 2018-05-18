@@ -32,19 +32,40 @@ public class EjerciciosLaboratorio {
 
     public int[] paredesAPintar() {
 
-        int[] arregloAreaParedes = new int[4];
+        int[] arregloParedes = new int[4];
         int largoPared;
         int anchoPared;
 
-        for (int i = 0; i < arregloAreaParedes.length; i++) {
+        for (int i = 0; i < arregloParedes.length; i++) {
 
             largoPared = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el largo de la pared"));
             anchoPared = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el ancho de la pared"));
-            arregloAreaParedes[i] = largoPared * anchoPared;
-            //System.out.println(arregloAreaParedes[j]);
+            arregloParedes[i] = largoPared * anchoPared;
+            //System.out.println(arregloAreaParedes[i]);
         }
-        return arregloAreaParedes;
+        return arregloParedes;
+    }
+
+    public int[] ordenaMenorMayor(int[] arreglo) {
+
+        int[] arregloOrdenado = new int[arreglo.length];
+
+        for (int i = 0; i < (arreglo.length); i++) {
+
+            for (int j = i + 1; j < arreglo.length; j++) {
+
+                if (arreglo[i] > arreglo[j]) {
+                    int variableAuxiliar = arreglo[i];
+                    arreglo[i] = arreglo[j];
+                    arreglo[j] = variableAuxiliar;
+                }
+            }
+            System.out.println(arreglo[i]);
+        }
+        
+        return arregloOrdenado;
     }
 
     
+
 }
