@@ -18,6 +18,12 @@ public class Laboratorio4 {
         // TODO code application logic here
         Ejercicio1 ej1 = new Ejercicio1();
         ej1.llenaArreglo();
+    
+        EjerciciosLaboratorio ej = new EjerciciosLaboratorio();
+        int [] arregloNumeros = {1,3,4,6};
+        
+        ej.busquedaLineal(arregloNumeros, 0);
+        
     }
     
 }

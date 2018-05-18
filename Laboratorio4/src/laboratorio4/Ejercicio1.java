@@ -19,7 +19,7 @@ public class Ejercicio1 {
 
         for (int i = 0; i < arregloNumeros.length; i++) {
             arregloNumeros[i] = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número"));
-            System.out.println(arregloNumeros[i] + "");
+            System.out.println(arregloNumeros[i]);
         }
 
         return arregloNumeros;
