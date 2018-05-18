@@ -5,9 +5,11 @@
  */
 package laboratorio4;
 
+import javax.swing.JOptionPane;
+
 /**
  *
- * @author melis
+ * @author Melissa
  */
 public class EjerciciosLaboratorio {
 
@@ -27,4 +29,22 @@ public class EjerciciosLaboratorio {
 
         return resultado;
     }
+
+    public int[] paredesAPintar() {
+
+        int[] arregloAreaParedes = new int[4];
+        int largoPared;
+        int anchoPared;
+
+        for (int i = 0; i < arregloAreaParedes.length; i++) {
+
+            largoPared = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el largo de la pared"));
+            anchoPared = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el ancho de la pared"));
+            arregloAreaParedes[i] = largoPared * anchoPared;
+            //System.out.println(arregloAreaParedes[j]);
+        }
+        return arregloAreaParedes;
+    }
+
+    
 }
