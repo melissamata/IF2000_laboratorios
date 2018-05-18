@@ -13,21 +13,18 @@ public class EjerciciosLaboratorio {
 
     public int busquedaLineal(int[] arregloNumeral, int numeroABuscar) {
 
-        int resultado = 0;
+        int resultado = -1;
 
         for (int i = 0; i < arregloNumeral.length; i++) {
 
             if (arregloNumeral[i] == numeroABuscar) {
                 resultado = arregloNumeral[i];
-            } else {
-                resultado = -1;
             }
+            
         }
 
         System.out.println("El número " + numeroABuscar + " se encuentra en la posición " + resultado);
-
+        
         return resultado;
-
     }
-
 }

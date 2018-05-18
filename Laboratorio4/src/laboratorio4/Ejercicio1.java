@@ -33,6 +33,7 @@ public class Ejercicio1 {
             suma += arregloNumeros[i];
         }
         promedio = suma/arregloNumeros.length;
+        
         System.out.println("La suma es: "+suma);
         System.out.println("El promedio es: "+promedio);
 

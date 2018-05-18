@@ -16,13 +16,13 @@ public class Laboratorio4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Ejercicio1 ej1 = new Ejercicio1();
+        /*Ejercicio1 ej1 = new Ejercicio1();
         int [] arregloNumeros = ej1.llenaArreglo();
-        ej1.operaciones(arregloNumeros);
+        ej1.operaciones(arregloNumeros);*/
     
-        /*EjerciciosLaboratorio ej = new EjerciciosLaboratorio();
+        EjerciciosLaboratorio ej = new EjerciciosLaboratorio();
         int [] segundoArregloNumeros = {1,3,4,6};
-        ej.busquedaLineal(segundoArregloNumeros, 3);*/
+        ej.busquedaLineal(segundoArregloNumeros, 9);
         
     }
     
