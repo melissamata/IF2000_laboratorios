@@ -19,10 +19,22 @@ public class Ejercicio1 {
 
         for (int i = 0; i < arregloNumeros.length; i++) {
             arregloNumeros[i] = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número"));
-            System.out.println(arregloNumeros[i]);
         }
 
         return arregloNumeros;
+
+    }
+
+    public void operaciones(int[] arregloNumeros) {
+
+        int suma = 0;
+        float promedio = 0;
+        for (int i = 0; i < arregloNumeros.length; i++) {
+            suma += arregloNumeros[i];
+        }
+        promedio = suma/arregloNumeros.length;
+        System.out.println("La suma es: "+suma);
+        System.out.println("El promedio es: "+promedio);
 
     }
 
