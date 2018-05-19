@@ -41,7 +41,7 @@ public class EjerciciosLaboratorio {
             largoPared = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el largo de la pared"));
             anchoPared = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el ancho de la pared"));
             arregloParedes[i] = largoPared * anchoPared;
-            //System.out.println(arregloAreaParedes[i]);
+            //System.out.println(arregloAreaParedes[f]);
         }
         return arregloParedes;
     }
@@ -62,8 +62,50 @@ public class EjerciciosLaboratorio {
             }
             System.out.println(arreglo[i]);
         }
-        
+
         return arregloOrdenado;
+    }
+
+    //public int[][] matrizNumero(int matrizNumerosPositivos) {
+
+    }//
+
+    public void valorRepetido() {
+
+        /*int[][] matrizNumerica = {{23, 8, 59, 73, 23, 45, 76},
+        {11, 6, 7, 82, 56, 34, 57},
+        {93, 34, 48, 1, 98, 26, 35},
+        {2, 92, 53, 26, 34, 82, 60},
+        {34, 17, 88, 6, 99, 53, 21}};
+
+        int variableAuxiliar = 1;
+        int cuentaRepetido = 0;
+
+        for (int f = 0; f < matrizNumerica.length; f++) {
+            for (int c = 0; c < matrizNumerica[0].length; c++) {
+                
+
+                if (variableAuxiliar != matrizNumerica[f][c]) {
+                    variableAuxiliar =  matrizNumerica[f][c];
+                }
+
+            }
+
+        }
+        System.out.print(variableAuxiliar);*/
+    }
+
+    public int calculoPromedioNumeros(int[][] matrizNumeral) {
+
+        int sumaMatriz = 0;
+        int promedioMatriz = 0;
+        for (int f = 0; f < matrizNumeral.length; f++) {
+
+            for (int c = 0; c < matrizNumeral[0].length; c++) {
+                sumaMatriz += matrizNumeral[f][c];
+            }
+        }
+        return promedioMatriz = sumaMatriz / ((matrizNumeral.length) * (matrizNumeral[0].length));
     }
 
     

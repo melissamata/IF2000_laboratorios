@@ -16,18 +16,24 @@ public class Laboratorio4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        /*Ejercicio1 ej1 = new Ejercicio1();
-        int [] arregloNumeros = ej1.llenaArreglo();
+       Ejercicio1 ej1 = new Ejercicio1();
+        
+        /*int [] arregloNumeros = ej1.llenaArreglo();
         ej1.operaciones(arregloNumeros);*/
-    
+
         EjerciciosLaboratorio ej = new EjerciciosLaboratorio();
+
         /*int [] segundoArregloNumeros = {1,3,4,6};
         ej.busquedaLineal(segundoArregloNumeros, 9);*/
-        int [] arregloParedes = ej.paredesAPintar();
-        ej.ordenaMenorMayor(arregloParedes);
+        /*int [] arregloParedes = ej.paredesAPintar();
+        ej.ordenaMenorMayor(arregloParedes);*/
         
+        //int[][] matrizNumeral = {{1, 2, 3, 4, 5, 6, 7},
+                                 //{8, 9, 10, 11, 12, 13, 14}};
+
+        //ej.calculoPromedioNumeros(matrizNumeral);
         
-        
+
     }
-    
+
 }

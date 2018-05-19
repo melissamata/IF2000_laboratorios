@@ -57,4 +57,5 @@ public class Ejercicio1 {
         System.out.println("El mayor es: " + numeroMayor);
         System.out.println("El menor es: " + numeroMenor);
     }
+
 }
