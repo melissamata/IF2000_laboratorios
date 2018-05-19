@@ -22,10 +22,14 @@ public class Laboratorio3 {
         ej1.esPar(numero);
         ej1.esImpar(numero);
         ej1.listaParesImpares();*/
+        
+        Ejercicio3 ej3 = new Ejercicio3();
+        ej3.menu();
+        
 
-        Ejercicio5 ej5 = new Ejercicio5();
+        /*Ejercicio5 ej5 = new Ejercicio5();
         ej5.fahrenheitACelsius(45);
-        ej5.celsiusAFahrenheit(32);
+        ej5.celsiusAFahrenheit(32);*/
     }
 
 }
