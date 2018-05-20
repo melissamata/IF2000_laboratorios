@@ -66,33 +66,39 @@ public class EjerciciosLaboratorio {
         return arregloOrdenado;
     }
 
-    //public int[][] matrizNumero(int matrizNumerosPositivos) {
+    public int valorRepetido(int[][] matrizNumerica) {
 
-    }//
-
-    public void valorRepetido() {
-
-        /*int[][] matrizNumerica = {{23, 8, 59, 73, 23, 45, 76},
-        {11, 6, 7, 82, 56, 34, 57},
-        {93, 34, 48, 1, 98, 26, 35},
-        {2, 92, 53, 26, 34, 82, 60},
-        {34, 17, 88, 6, 99, 53, 21}};
-
-        int variableAuxiliar = 1;
-        int cuentaRepetido = 0;
+        int repeticionMaxima = 0;
+        int numeroMaximaRepeticion = 0;
 
         for (int f = 0; f < matrizNumerica.length; f++) {
             for (int c = 0; c < matrizNumerica[0].length; c++) {
-                
-
-                if (variableAuxiliar != matrizNumerica[f][c]) {
-                    variableAuxiliar =  matrizNumerica[f][c];
+                int numActual = matrizNumerica[f][c];
+                int repeticionActual = contarApariciones(matrizNumerica, numActual);
+                if (repeticionActual > repeticionMaxima) {
+                    repeticionMaxima = repeticionActual;
+                    numeroMaximaRepeticion = numActual;
                 }
 
             }
 
         }
-        System.out.print(variableAuxiliar);*/
+
+        return numeroMaximaRepeticion;
+
+    }
+
+    public int contarApariciones(int[][] matriz, int numeroBuscado) {
+        int apariciones = 0;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                if (numeroBuscado == matriz[i][j]) {
+                    apariciones++;
+                }
+            }
+
+        }
+        return apariciones;
     }
 
     public int calculoPromedioNumeros(int[][] matrizNumeral) {
@@ -107,7 +113,4 @@ public class EjerciciosLaboratorio {
         }
         return promedioMatriz = sumaMatriz / ((matrizNumeral.length) * (matrizNumeral[0].length));
     }
-
-    
-
 }

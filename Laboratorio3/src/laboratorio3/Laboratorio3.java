@@ -24,12 +24,17 @@ public class Laboratorio3 {
         ej1.listaParesImpares();*/
         
         Ejercicio3 ej3 = new Ejercicio3();
-        ej3.menu();
+        //ej3.menu();
+        
+        Ejercicio4 ej4 = new Ejercicio4();
+        ej4.imprimir();
         
 
         /*Ejercicio5 ej5 = new Ejercicio5();
         ej5.fahrenheitACelsius(45);
         ej5.celsiusAFahrenheit(32);*/
     }
+    
+    
 
 }

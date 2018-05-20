@@ -5,7 +5,6 @@
  */
 package laboratorio5;
 
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
@@ -13,15 +12,17 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Tooltip;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 /**
  *
  * @author melis
  */
-public class Laboratorio5 extends Application {
+public class InsertarEstudianteFrame {
 
     Label label_estudiante;
     TextField textField_carnet;
@@ -29,8 +30,8 @@ public class Laboratorio5 extends Application {
     TextField textField_nota;
     Button button_insertarEstudiante;
 
-    @Override
     public void start(Stage primaryStage) {
+
         label_estudiante = new Label("Ingrese los datos del estudiante");
 
         textField_carnet = new TextField();
@@ -46,7 +47,6 @@ public class Laboratorio5 extends Application {
         button_insertarEstudiante.setText("Ingresar");
         button_insertarEstudiante.setPrefSize(100, 30);
         button_insertarEstudiante.setOnAction(new EventHandler<ActionEvent>() {
-            
             @Override
             public void handle(ActionEvent event) {
                 
@@ -68,13 +68,6 @@ public class Laboratorio5 extends Application {
         primaryStage.setTitle("Insertar Estudiante");
         primaryStage.setScene(scene);
         primaryStage.show();
-    }
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        launch(args);
     }
 
 }

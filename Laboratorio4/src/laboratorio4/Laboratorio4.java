@@ -22,17 +22,26 @@ public class Laboratorio4 {
         ej1.operaciones(arregloNumeros);*/
 
         EjerciciosLaboratorio ej = new EjerciciosLaboratorio();
+        int[][] matriz = {{1,23,39,42,58,66,75},
+                          {23,98,11,21,23,85,90},
+                          {64,32,7,35,23,82,99,56},
+                          {22,39,40,29,76,8,17,30},
+                          {87,46,91,23,53,96,47,12}};
+        
+        int masRepetido = ej.valorRepetido(matriz);
+        System.out.println("El mas repetido es "+masRepetido);
+        
+        
 
         /*int [] segundoArregloNumeros = {1,3,4,6};
         ej.busquedaLineal(segundoArregloNumeros, 9);*/
         /*int [] arregloParedes = ej.paredesAPintar();
         ej.ordenaMenorMayor(arregloParedes);*/
         
-        //int[][] matrizNumeral = {{1, 2, 3, 4, 5, 6, 7},
-                                 //{8, 9, 10, 11, 12, 13, 14}};
+        
 
         //ej.calculoPromedioNumeros(matrizNumeral);
-        
+    }
 
     }
 
